@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    Introduction to JS 
+    
+    
+    What is JS?
+        Javascript is scripting / programming language
+        Javascript is used to build the dynamic web application
+        to add the user interaction in webpages ( UX / user experience)
+    
+    input -> login / register
+
+    Javascript built by brendan eich in the year of 1995
+    Javascript is maintained by the ECMA international
+    WEB APIS W3C
+    -> Mouse, keyboard -> Events
+
+    Javascript Features :
+        1. Multi pradigm programming language
+            Javascript supports multiple programming styles
+            like
+                1. Functional programming
+                    the programs are written with the help of functions 
+                    like the c language
+                2. Object oriented programming
+                    The programs are written with the help of class and object
+                    like Java, CPP, Python
+                3. Object Based programming
+                    The javascript provides the Built in object 
+                    window -> Global object
+                4. Procedural Programming
+                    Without the help of class object functions we can write the programs
+        2. Event driven programming language
+            it performs some actions on the user interaction
+            with help of event object we can perform the actions on click of the mouse button
+            or the keys pressed on the keyboards
+
+        3. Dynamic typed language
+            Javascript is dynamically typed languages means when declaring the variables or the objects
+            we dont have to give the datatypes
+
+    Environment 
+        1. Browser
+            Browser has the Javascript engine to execute the Javascript programs
+            Edge, Chrome, Safari,        firefox
+            V8 engine    Javascript core spidermonkey
+
+        2. Node js
+            Node js provides the environment to execute the Javascript programs outside the browser
+            it uses the V8 engine to execute the JS programs
+            We cannot use the web features in the node js
+        
+    Editor
+        VS - code
+
+    The ways of writing JS
+        1. using script tag in the HTML & using the event attributes in HTML elements
+        2. by creating the separate javascript file using .js extension and we can link
+           this file with HTML using the script tag
+
+    
+    1. If using the script tag it must be at the end of body tag
+
+
+    using the node js 
+        1. Install node js
+        2. confirm installation by running node -v command in cmd
+        3. create the javascript file with .js extension
+        4. use node fileName.js to execute the javascript program using node js
+
+
+    The javascript is interpreted and JIT interpreted languages
+
+
+    Printing Statements in JS 
+        To display the output of the program we use the printing statement
+
+
+    Variables in JS
+        Variable is named memory location which store the memory location
+    Types of variable
+        1. local variable 
+            local variables are belongs to the specific block (function, conditional , looping)
+            local variables cannot be accessed outside the block (excluding some declaration)
+        2. Global Variable
+            Global variables can be declared outside the block ( class, object, function, conditional, looping)
+            its values can be accessed anywhere in the program
+        3. static variable
+            the static variables are the shared variables across the all objects
+        4. constant variable
+            the values stored in constant variables cannot be changed
+
+    How to declare the variable in JS?
+        there are 3 types keywords to declare the variable in js
+        var -> var is used to declare the variable
+        let -> used to declare the block scoped varible
+        const -> used to declare the constant variable
+
+    diff between let, const and var
+
+    var 
+        var declarations are function scoped they can be accessed inside the function 
+        without depending on the block
+        the var declaration are the global inside the function
+
+        var declarations can be reassigned 
+
+    let 
+        let declaration are the block scoped
+
+        let declarations can be reassigned
+
+    const
+        const declarations are the block scoped
+
+        it doesnot allow to reassign the values
+
+
+
+    1. declaration / initialisation
+        var a; // declaration
+        var a = 10; // initialisation
+    2. assignement
+        var a;
+        a = 10;
+    3. reassignment
+        var a = 10;
+        a = "ravindra"// reassignment
+    4. redeclaration
+        declaring the variable with same name 
+        1. same scope
+            var allows to redeclare the variable in same scope
+        2. diff scope
+            let and const not allows to redeclare the variable in same scope
+            but can be redecalred in diff scopes
+
+
+    Next - Tokens
+        Tokens are the Basic building block of any programming language
+        (Grammer for the language)
+
+
+
+
+    class A{
+        String name;
+        String name;
+        // redeclaration in diffrent scope
+        A(String name){
+            this.name = name;
+        }
+    
+    }
+
+
+    
+    -->
+
+    <button onclick="alert('Button is clicked')">Click Me</button>
+
+    <!-- <script>
+      // We can write the js programs
+      console.log("Hello from Javascript"); // printing function to display the output on the console
+    </script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
