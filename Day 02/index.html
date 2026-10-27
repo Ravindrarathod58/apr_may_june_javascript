@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+            Tokens in JS
+                Tokens are the basic building block of programming language
+               
+            1. Keywords
+                    Reserved words provided by the language iteself to write the programs
+                    let, const, var , function, class
+
+            2. identifiers
+                    identifiers are the name given to variables, functions, objects
+                    classes to identify and use their values
+                    let name; ->   name
+                    keyword identifier
+
+            3. Literal
+                    literals are the values assigned to variables
+                    string literal, object literal, array literal, number literal
+                    let name = "ravindra"
+            
+            4. operators
+                    operators are the symbols used to perform the operations on the operands
+                    let name = "ravindra"
+                    addition
+                    let a = 10; 
+                    let b = 20;
+                    let c = a + b;
+                typse of Operators
+                    1. Arithmatic Operators
+                        + -> addition
+                        - -> subtraction
+                        / -> division
+                        * -> multiplication
+                        % -> modulus
+                        ** -> exponent operator
+                            (returns the power )
+                    2. Relational Operators
+                        >    
+                        <
+                        >=
+                        <=
+                    3. Comparison Operators
+                        == -> Loose equality operator
+                        (checks only the values )
+                        !=  -> loose not equality operator
+                        === -> Strict equality operator
+                        (checks the values along with datatypes)
+                        !== -> strict not equality operator
+                    
+                    4. assignment operator
+                        =
+                        +=
+                        -=
+                        /=
+                        *=
+                        %=
+                    5. Logical Operators
+                        || -> returns true if any of the operand is true
+                        && -> returns true only if both operands are true
+                        !  -> reverse the result (true -> false, false -> true)
+
+                    additional
+                        typeOf  -> returns the datatype of variable
+                        delete -> deletes the property from the object
+
+            5. separators / punctuators
+                ; -> to terminate the line (optional)
+                . -> used to refer the properties of objects
+                : -> to separate the key and values in object  { name : "Ravindra"  }
+
+            6. comments
+                comments are non executable statements used to explain the code blocks 
+                or to add the information
+                1. single line comment
+                    // -> used to add the single line comment
+
+                2. multi line comment
+                    /* 
+                        -> multi line comment here
+                    */
+
+        Data types 
+
+        1. Primitive (single and immutable values)
+
+            1. Number
+                we can store the integer and float type of values in number type
+                10, 10.5
+                we can convert any datatype to the number type using some methods
+            (Type conversion)
+                Number.parseInt() -> converts any datatype into number (whole number)
+                Number.parseFloat() -> converts any datatype into number (preserve the decimal)
+                Number()
+
+            2. string
+                to store the sequence of character
+                "" -> double quotes
+                '' -> single quotes
+                ``  -> backticks
+                toString() -> converts any type to string
+                string.valueOf() -> convert any type to string
+                String(); -> convert any type to string
+            
+            3. boolean
+                true
+                false
+
+                conversion
+                    Boolean(); // 
+                truthy and falsy
+                    0 -> false value
+                    '' -> false value
+                    undefined -> false value
+                
+            4. undefined
+                default value of the varible (default empty value)
+
+            5. BigInt
+                if any value is out of the range of number types then we can use bigint to store the large values
+
+            6. null
+                if we have to keep any value of the variable intetionally empty then we can assign the null value
+            
+            7. symbol
+                symbols are the unique values
+                10 == 10 -> true
+                symbol(10) == symbol(10) => false
+            
+
+        2. Reference type (multiple mutable values)
+            1. Array 
+                Collection of multiple values of any datatype
+                arrays are dynamic in nature
+            2. object
+                collection of key and value pairs
+            3. function
+                block of executable code 
+            4. map
+                set of key value pairs
+            5. set
+                array of unique elements
+
+
+        
+        Type Conversion (type casting)
+            process of converting one datatype into another datatype
+
+            1. Explicit Conversion 
+                manually converting the datatype using methods or operators
+                let a = "10";
+                let b = parseInt(a); // manual conversion
+
+            2. implicit conversion (type coersion)
+                automatically the JS engine converts the datatypes according to context
+
+                using relational operator
+                    let a = 10;
+                    let b = "20"
+                    a > b  => false   10 > 20 => implicit converted string into number
+                    b > a => true
+                
+                using arithmatic operator (excluding + )
+                    let a = 10;
+                    let b = "20"
+
+
+                    let c = a + b ; // 1020  (concatenation)
+
+                    c = a + +b; // 30 (addition)
+                        if + operator is used next to the variable then it performs the explicit type conversion
+
+                    b = parseInt(b); 
+                    c = a + b; // 30 (addition)
+
+
+            literals
+                infinity -> stores the infinite value
+                NaN -> not a number
+                    (when the type conversion od failed)
+                    isNan() -> returns true if the value is NaN
+
+                -infinity
+
+                
+
+        How to take the input in JS?
+            using the prompt() function we can take the input from the user
+            prompt() function always returns the string values
+
+            confirm() function to take the boolean value
+
+            alert() to display the alert message
+
+            using the HTML textboxes
+                    
+                    
+    
+    
+    -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
